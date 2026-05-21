@@ -86,6 +86,10 @@ const curriculum = {
             description: '216',
             category: 'general'
         },
+        'Немски език': {
+            description: '72',
+            category: 'general'
+        },
         'Математика': {
             description: '108',
             category: 'general'
@@ -118,6 +122,10 @@ const curriculum = {
             description: '54',
             category: 'general'
         },
+        'Музика': {
+            description: '18',
+            category: 'general'
+        },
         'Изобразително изкуство': {
             description: '18',
             category: 'general'
@@ -126,17 +134,14 @@ const curriculum = {
             description: '72',
             category: 'general'
         },
-
         'Здравословни и безопасни условия на труд': {
             description: '18',
             category: 'general-professional'
         },
-
         'Икономика': {
             description: '36',
             category: 'general-professional'
         },
-
         'Дигитални технологии (теория)': {
             description: '18',
             category: 'professional'
@@ -149,7 +154,6 @@ const curriculum = {
             description: '36',
             category: 'professional'
         },
-
         'Дигитални технологии (практика)': {
             description: '18',
             category: 'practice'
@@ -162,7 +166,6 @@ const curriculum = {
             description: '36',
             category: 'practice'
         },
-
         'Разширена професионална подготовка': {
             description: '90',
             category: 'advanced-professional'
@@ -175,6 +178,10 @@ const curriculum = {
             category: 'general'
         },
         'Английски език': {
+            description: '72',
+            category: 'general'
+        },
+        'Немски език': {
             description: '72',
             category: 'general'
         },
@@ -214,17 +221,18 @@ const curriculum = {
             description: '72',
             category: 'general'
         },
-
+        'Музика': {
+            description: '18',
+            category: 'general'
+        },
         'Програмиране (практика)': {
             description: '18',
             category: 'practice'
         },
-
         'Производствена практика': {
             description: '64',
             category: 'practice'
         },
-
         'Разширена професионална подготовка': {
             description: '144',
             category: 'advanced-professional'
@@ -234,6 +242,10 @@ const curriculum = {
     11: {
         'Български език и литература': {
             description: '108',
+            category: 'general'
+        },
+        'Немски език': {
+            description: '72',
             category: 'general'
         },
         'Математика': {
@@ -248,47 +260,38 @@ const curriculum = {
             description: '72',
             category: 'general'
         },
-
         'Чужд език по професията': {
             description: '72',
             category: 'general-professional'
         },
-
         'Алгоритми и структури от данни за машинно обучение': {
             description: 'Теория: 36, Практика: 54',
             category: 'specific-professional'
         },
-
         'Анализ на данни': {
             description: 'Теория: 36, Практика: 54',
             category: 'specific-professional'
         },
-
         'Програмиране на интелигентни системи': {
             description: 'Теория: 72, Практика: 72',
             category: 'specific-professional'
         },
-
         'Изкуствен интелект във вградени системи': {
             description: 'Теория: 54, Практика: 72',
             category: 'specific-professional'
         },
-
         'Основи на математиката за интелигентни системи': {
             description: 'Теория: 36, Практика: 36',
             category: 'specific-professional'
         },
-
         'Генеративен изкуствен интелект': {
             description: 'Теория: 18, Практика: 36',
             category: 'specific-professional'
         },
-
         'Производствена практика': {
             description: '64',
             category: 'practice'
         },
-
         'Разширена професионална подготовка': {
             description: '72',
             category: 'advanced-professional'
@@ -312,47 +315,38 @@ const curriculum = {
             description: '58',
             category: 'general'
         },
-
         'Чужд език по професията': {
             description: '58',
             category: 'general-professional'
         },
-
         'Алгоритми и структури от данни за машинно обучение': {
             description: 'Теория: 58, Практика: 58',
             category: 'specific-professional'
         },
-
         'Анализ на данни': {
             description: 'Теория: 58, Практика: 87',
             category: 'specific-professional'
         },
-
         'Програмиране на интелигентни системи': {
             description: 'Теория: 58, Практика: 87',
             category: 'specific-professional'
         },
-
         'Изкуствен интелект във вградени системи': {
             description: 'Теория: 29, Практика: 29',
             category: 'specific-professional'
         },
-
         'Генеративен изкуствен интелект': {
             description: 'Теория: 29, Практика: 29',
             category: 'specific-professional'
         },
-
         'Производствена практика': {
             description: '64',
             category: 'practice'
         },
-
         'Разширена професионална подготовка': {
             description: '29',
             category: 'advanced-professional'
         },
-
         'Разширена подготовка': {
             description: '29',
             category: 'advanced'
@@ -381,6 +375,7 @@ const subjectIcons = {
     'Български език и литература': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/book.svg',
     'Математика': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/calculator.svg',
     'Английски език': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/translate.svg',
+    'Немски език': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/globe2.svg',
     'Чужд език по професията': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/chat-dots.svg',
     'Информационни технологии': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/pc-display.svg',
     'История и цивилизации': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/clock-history.svg',
