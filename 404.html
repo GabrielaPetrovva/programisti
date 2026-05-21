@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Страницата не е намерена</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/social.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .error-section {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .error-card {
+            width: 100%;
+            max-width: 760px;
+            padding: 50px 40px;
+            text-align: center;
+            border-radius: 22px;
+            background: rgba(0, 0, 0, 0.35);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            box-shadow: 0 0 18px rgba(168, 85, 247, 0.35), 0 0 28px rgba(59, 130, 246, 0.25);
+        }
+
+        .error-code {
+            font-size: clamp(3.8rem, 9vw, 6.5rem);
+            font-weight: 700;
+            letter-spacing: 2px;
+            line-height: 1;
+            margin-bottom: 14px;
+            color: #ffffff;
+            text-shadow: 0 0 10px rgba(168, 85, 247, 0.8), 0 0 20px rgba(59, 130, 246, 0.75);
+        }
+
+        .error-title {
+            font-size: clamp(1.5rem, 3.5vw, 2rem);
+            margin-bottom: 16px;
+        }
+
+        .error-text {
+            max-width: 560px;
+            margin: 0 auto 28px;
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.65;
+            font-size: 1.05rem;
+        }
+
+        .error-link {
+            display: inline-block;
+            padding: 12px 26px;
+            border-radius: 999px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            background: linear-gradient(90deg, rgba(168, 85, 247, 0.9), rgba(59, 130, 246, 0.9));
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .error-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(59, 130, 246, 0.45);
+        }
+
+        @media (max-width: 768px) {
+            .error-card {
+                padding: 36px 24px;
+            }
+
+            .error-text {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="header-container"></div>
+
+    <main class="error-section">
+        <section class="error-card" aria-labelledby="error-title">
+            <p class="error-code">404</p>
+            <h1 id="error-title" class="error-title">Страницата не е намерена</h1>
+            <p class="error-text">
+                Изглежда, че адресът е невалиден или страницата е преместена.
+                Върнете се към началната страница и продължете да разглеждате нашето съдържание.
+            </p>
+            <a class="error-link" href="index.html">Към началната страница</a>
+        </section>
+    </main>
+
+    <div id="footer-container"></div>
+
+    <script src="js/common.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/effects.js" defer></script>
+</body>
+</html>

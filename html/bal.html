@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СУ "Йордан Йовков" - Интелигентни системи</title>
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/bal.css">
+    <link rel="stylesheet" href="../css/social.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+    <!-- Контейнер за хедъра -->
+    <div id="header-container"></div>
+
+    <section id="calculator" class="calculator-section">
+        <div class="calculator-container">
+            <h2>Калкулатор за бал</h2>
+            <form id="balForm">
+                <div class="input-group">
+                    <label>Точки от НВО по БЕЛ:</label>
+                    <input type="number" id="belPoints" min="0" max="100" required>
+                </div>
+                <div class="input-group">
+                    <label>Точки от НВО по Математика:</label>
+                    <input type="number" id="mathPoints" min="0" max="100" required>
+                </div>
+                <div class="input-group">
+                    <label>Оценка по КМИТ:</label>
+                    <div class="custom-select-wrapper">
+                        <div class="custom-select">
+                            <div class="custom-select-trigger">Изберете оценка</div>
+                            <div class="custom-options">
+                                <span class="custom-option" data-value="15">Среден (3)</span>
+                                <span class="custom-option" data-value="26">Добър (4)</span>
+                                <span class="custom-option" data-value="39">Много добър (5)</span>
+                                <span class="custom-option" data-value="50">Отличен (6)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label>Оценка по Чужд език (Английския език <img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" alt="Великобритания" style="width: 20px; vertical-align: middle; margin-right: 5px;">):
+
+                    </label>
+                    <div class="custom-select-wrapper">
+                        <div class="custom-select">
+                            <div class="custom-select-trigger">Изберете оценка</div>
+                            <div class="custom-options">
+                                <span class="custom-option" data-value="15">Среден (3)</span>
+                                <span class="custom-option" data-value="26">Добър (4)</span>
+                                <span class="custom-option" data-value="39">Много добър (5)</span>
+                                <span class="custom-option" data-value="50">Отличен (6)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" id="calculateBal" class="calculate-btn">Изчисли бал</button>
+            </form>
+            <div id="result" class="result-box">Твоят бал е:</div>
+        </div>
+    </section>
+
+
+    <div class="calculator-explanation hidden">
+        <h3>Как се пресмята балът за специалността "Интелигентни системи"?</h3>
+        <p>
+            Вашият бал се изчислява на базата на резултатите от Националното външно оценяване (НВО) и оценките от удостоверението за завършване на основно образование. Формулата за изчисляване на бала е следната:
+        </p>
+        <ul>
+            
+            <li>Точките от НВО по <strong>Български език и литература</strong> се умножават по 2.</li>
+            <li>Точките от НВО по <strong>Математика </strong> също се умножават по 2.</li>
+            <li>Към сбора се добавят оценките по:
+                <ul>
+                    <li><strong>Kомпютърно моделиране и информационни технологии:</strong> преобразувана в точки: 
+                        <em>Среден (3) - 15 т., Добър (4) - 26 т., Много добър (5) - 39 т., Отличен (6) - 50 т.</em>
+                    </li>
+                    <li><strong>Чужд език:</strong> преобразувана в точки: 
+                        <em>Среден (3) - 15 т., Добър (4) - 26 т., Много добър (5) - 39 т., Отличен (6) - 50 т.</em>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <p>
+            Максималният бал, който можете да постигнете, е <strong>500 точки</strong>. 
+        </p>
+        <p>
+            Той се събира от 200 точки за НВО по Български език и литература, 200 точки за НВО по Математика и 100 точки от оценките по Информационни технологии и Чужд език.
+        </p>
+        <p>
+            Нашата професионална паралелка "Интелигентни системи" е насочена към ученици, които искат да развият умения в програмирането, информационните технологии и чуждите езици. Състезателният бал помага да се подберат най-мотивираните кандидати за специалността.
+        </p>
+    </div>
+    
+
+    <!-- Контейнер за футъра -->
+    <div id="footer-container"></div>
+
+    <!-- Добавяме скрипта за общите компоненти пръв -->
+    <script src="../js/common.js" defer></script>
+    <script src="../js/main.js" defer></script>
+    <script src="../js/effects.js" defer></script>
+    <script src="../js/bal.js" defer></script>
+
+    <script>
+
+    document.addEventListener('DOMContentLoaded', () => {
+    const belPointsInput = document.getElementById('belPoints');
+    const mathPointsInput = document.getElementById('mathPoints');
+    const resultBox = document.getElementById('result');
+
+    let itGradePoints = 0; // Съхранява избора на оценка по ИТ
+    let langGradePoints = 0; // Съхранява избора на оценка по чужд език
+
+    // Ограничаване на стойности до 100
+    [belPointsInput, mathPointsInput].forEach(input => {
+        input.addEventListener('input', () => {
+            if (input.value > 100) {
+                input.value = 100;
+            } else if (input.value < 0) {
+                input.value = 0;
+            }
+        });
+    });
+
+    // Инициализация на персонализираните менюта
+    document.querySelectorAll('.custom-select').forEach(select => {
+        const trigger = select.querySelector('.custom-select-trigger');
+        const options = select.querySelector('.custom-options');
+
+        trigger.addEventListener('click', () => {
+            options.style.display = options.style.display === 'block' ? 'none' : 'block';
+        });
+
+        select.querySelectorAll('.custom-option').forEach(option => {
+            option.addEventListener('click', () => {
+                trigger.textContent = option.textContent;
+
+                // Проверка към кое поле се отнася избраната стойност
+                const label = select.closest('.input-group').querySelector('label').textContent;
+                if (label.includes("Информационни технологии")) {
+                    itGradePoints = parseInt(option.getAttribute('data-value')); // Вземане на стойността за ИТ
+                } else if (label.includes("Чужд език")) {
+                    langGradePoints = parseInt(option.getAttribute('data-value')); // Вземане на стойността за чужд език
+                }
+
+                options.style.display = 'none';
+            });
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.custom-select')) {
+                options.style.display = 'none';
+            }
+        });
+    });
+
+    // Изчисляване на бала
+    document.getElementById('calculateBal').addEventListener('click', () => {
+        const belPoints = parseInt(belPointsInput.value) || 0; // Точки по БЕЛ
+        const mathPoints = parseInt(mathPointsInput.value) || 0; // Точки по математика
+
+        // Изчисление на бала
+        const totalBal = (belPoints * 2) + (mathPoints * 2) + itGradePoints + langGradePoints;
+
+        // Показване на резултата
+        resultBox.textContent = `Твоят бал е: ${totalBal}`;
+    });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target); // Спира наблюдението след появяването
+            }
+        });
+    });
+
+    const hiddenElements = document.querySelectorAll('.hidden');
+    hiddenElements.forEach(el => observer.observe(el));
+});
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>СУ "Йордан Йовков" - Интелигентни системи</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/social.css">
+    <link rel="stylesheet" href="css/testimonials.css">
+    <link rel="stylesheet" href="css/scrollBar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+    <div id="header-container"></div>
+
+    <img class="banner-img" src="images/Banner2.png" alt="Програмиране">
+
+        <div id="spline-wrapper">
+            <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.48/build/spline-viewer.js"></script>
+            <spline-viewer events-target="global" id="robot-viewer" url="https://prod.spline.design/m6b73mxU2W0NUsSj/scene.splinecode"></spline-viewer>
+        </div>
+
+    <section class="section" id="about" style="backdrop-filter: blur(10px); background: rgba(255, 255, 255, 0.1); border-radius: 15px;">
+        <h1>При нас ще се научите да програмирате и разработвате:</h1>
+        <div class="icon-grid">
+            <div class="show">
+                <img src="images/icon-web.png" alt="Уеб приложения">
+                <p>Уеб приложения</p>
+            </div>
+            <div class="show">
+                <img src="images/icon-mobile.png" alt="Mобилни приложения">
+                <p>Мобилни приложения</p>
+            </div>  
+            <div>
+                <img src="images/icon-programming.png" alt="Програмиране">
+                <p>Десктоп приложения</p>
+            </div>
+            <div class="show">
+                <img src="images/icon-db.png" alt="Бази данни">
+                <p>Бази данни</p>
+            </div>
+            <div class="show">
+                <img src="images/icon-ai.png" alt="Изкуствен интелект">
+                <p>Изкуствен интелект</p>
+            </div>
+        </div>
+    </section>
+    
+    <div class="slider-container">
+        <br>
+        <h2 class="slider-title">Нашите ученици споделят</h2>
+        <div class="slider">
+            <button class="nav-button prev-button">
+                <svg viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7"></path></svg>
+            </button>
+            
+            <div class="slider-content">
+                <div class="slides" id="slides"></div>
+            </div>
+
+            <button class="nav-button next-button">
+                <svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"></path></svg>
+            </button>
+        </div>
+        <div class="dots-container" id="dots"></div>
+    </div>
+
+    <section class="banner">
+        <h2>От ученик до разработчик на интелигентни системи!</h2>
+        <p>Нашата цел е да вдъхновим младите умове да преминат от консуматори на технологии към нейни създатели.</p>
+        
+        <a href="html\bal.html">
+            <button>Изчисли своя бал</button>
+        </a>
+    </section>
+
+
+    <div id="footer-container"></div>
+
+
+    <script src="../js/common.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/home.js" defer></script>
+    <script src="js/robot.js" defer></script>
+    <script src="js/testimonials.js" defer></script>
+
+    <script>
+    // Специална обработка на dropdown менюто в мобилната версия на главната страница
+    document.addEventListener('DOMContentLoaded', function() {
+        // Функционалност за dropdown меню в index.html
+        const dropdownParent = document.querySelector('nav ul li:nth-child(3)');
+        const dropdownToggle = dropdownParent.querySelector('a');
+        
+        if (dropdownToggle && dropdownParent) {
+            dropdownToggle.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                dropdownParent.classList.toggle('open');
+                
+                // Предотвратява затварянето на мобилното меню при клик върху dropdown
+                e.stopImmediatePropagation();
+            });
+        }
+    });
+    </script>
+</body>
+</html>
