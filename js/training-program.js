@@ -40,24 +40,14 @@ const curriculum = {
             description: '36',
             category: 'general'
         },
-        'Музика': {
-            description: '18',
-            category: 'general'
-        },
-        'Изобразително изкуство': {
-            description: '18',
-            category: 'general'
-        },
         'Физическо възпитание и спорт': {
             description: '72',
             category: 'general'
         },
-
         'Предприемачество': {
             description: '36',
             category: 'general-professional'
         },
-
         'Дигитални технологии (теория)': {
             description: '18',
             category: 'professional'
@@ -70,7 +60,6 @@ const curriculum = {
             description: '18',
             category: 'practice'
         },
-
         'Разширена професионална подготовка': {
             description: '54',
             category: 'advanced-professional'
@@ -120,14 +109,6 @@ const curriculum = {
         },
         'Химия и опазване на околната среда': {
             description: '54',
-            category: 'general'
-        },
-        'Музика': {
-            description: '18',
-            category: 'general'
-        },
-        'Изобразително изкуство': {
-            description: '18',
             category: 'general'
         },
         'Физическо възпитание и спорт': {
@@ -219,10 +200,6 @@ const curriculum = {
         },
         'Физическо възпитание и спорт': {
             description: '72',
-            category: 'general'
-        },
-        'Музика': {
-            description: '18',
             category: 'general'
         },
         'Програмиране (практика)': {
