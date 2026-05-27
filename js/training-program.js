@@ -1,7 +1,15 @@
 const curriculum = {
     8: {
+        'Информационни технологии ': {
+            description: '36',
+            category: 'advanced-professional'
+        },
+        'Предприемачество': {
+            description: '36',
+            category: 'general-professional'
+        },
         'Български език и литература': {
-            description: '144',
+            description: '144 ',
             category: 'general'
         },
         'Английски език': {
@@ -40,33 +48,36 @@ const curriculum = {
             description: '36',
             category: 'general'
         },
+        'Музика': {
+            description: '18',
+            category: 'general'
+        },
+        'Изобразително изкуство': {
+            description: '18',
+            category: 'general'
+        },
         'Физическо възпитание и спорт': {
             description: '72',
             category: 'general'
-        },
-        'Предприемачество': {
-            description: '36',
-            category: 'general-professional'
-        },
-        'Дигитални технологии (теория)': {
-            description: '18',
-            category: 'professional'
-        },
-        'Програмиране (теория)': {
-            description: '18',
-            category: 'professional'
-        },
-        'Дигитални технологии (практика)': {
-            description: '18',
-            category: 'practice'
-        },
-        'Разширена професионална подготовка': {
-            description: '54',
-            category: 'advanced-professional'
         }
     },
-
     9: {
+        'Дигитални технологии': {
+            description: 'Теория: 18, Практика: 18',
+            category: 'professional'
+        },
+        'Програмиране': {
+            description: 'Теория: 18, Практика: 36',
+            category: 'professional'
+        },
+        'Основи на бази данни': {
+            description: 'Теория: 36, Практика: 36',
+            category: 'professional'
+        },
+        'Здравословни и безопасни условия на труд': {
+            description: '18',
+            category: 'general-professional'
+        },
         'Български език и литература': {
             description: '108',
             category: 'general'
@@ -82,7 +93,7 @@ const curriculum = {
         'Математика': {
             description: '108',
             category: 'general'
-        },
+        },        
         'Информационни технологии': {
             description: '36',
             category: 'general'
@@ -114,46 +125,25 @@ const curriculum = {
         'Физическо възпитание и спорт': {
             description: '72',
             category: 'general'
+        }
+    },
+    10: {
+        'Дигитални технологии': {
+            description: 'Теория: 18, Практика: 18',
+            category: 'professional'
         },
-        'Здравословни и безопасни условия на труд': {
-            description: '18',
-            category: 'general-professional'
+        'Програмиране': {
+            description: 'Теория: 18, Практика: 18',
+            category: 'professional'
         },
         'Икономика': {
             description: '36',
             category: 'general-professional'
         },
-        'Дигитални технологии (теория)': {
-            description: '18',
-            category: 'professional'
-        },
-        'Програмиране (теория)': {
-            description: '18',
-            category: 'professional'
-        },
-        'Основи на бази данни (теория)': {
-            description: '36',
-            category: 'professional'
-        },
-        'Дигитални технологии (практика)': {
-            description: '18',
+        'Производствена практика': {
+            description: '64',
             category: 'practice'
         },
-        'Програмиране (практика)': {
-            description: '36',
-            category: 'practice'
-        },
-        'Основи на бази данни (практика)': {
-            description: '36',
-            category: 'practice'
-        },
-        'Разширена професионална подготовка': {
-            description: '90',
-            category: 'advanced-professional'
-        }
-    },
-
-    10: {
         'Български език и литература': {
             description: '108',
             category: 'general'
@@ -201,45 +191,12 @@ const curriculum = {
         'Физическо възпитание и спорт': {
             description: '72',
             category: 'general'
-        },
-        'Програмиране (практика)': {
-            description: '18',
-            category: 'practice'
-        },
-        'Производствена практика': {
-            description: '64',
-            category: 'practice'
-        },
-        'Разширена професионална подготовка': {
-            description: '144',
-            category: 'advanced-professional'
         }
     },
-
     11: {
-        'Български език и литература': {
-            description: '108',
-            category: 'general'
-        },
-        'Немски език': {
-            description: '72',
-            category: 'general'
-        },
-        'Математика': {
-            description: '72',
-            category: 'general'
-        },
-        'Гражданско образование': {
-            description: '36',
-            category: 'general'
-        },
-        'Физическо възпитание и спорт': {
-            description: '72',
-            category: 'general'
-        },
-        'Чужд език по професията': {
-            description: '72',
-            category: 'general-professional'
+        'Програмиране': {
+            description: 'Теория: 36, Практика: 36',
+            category: 'professional'
         },
         'Алгоритми и структури от данни за машинно обучение': {
             description: 'Теория: 36, Практика: 54',
@@ -265,37 +222,36 @@ const curriculum = {
             description: 'Теория: 18, Практика: 36',
             category: 'specific-professional'
         },
+        'Чужд език по професията': {
+            description: '72',
+            category: 'general-professional'
+        },
         'Производствена практика': {
             description: '64',
             category: 'practice'
         },
-        'Разширена професионална подготовка': {
-            description: '72',
-            category: 'advanced-professional'
-        }
-    },
-
-    12: {
         'Български език и литература': {
-            description: '87',
+            description: '108',
+            category: 'general'
+        },
+        'Немски език': {
+            description: '72',
             category: 'general'
         },
         'Математика': {
-            description: '58',
+            description: '72',
             category: 'general'
         },
         'Гражданско образование': {
-            description: '29',
+            description: '36',
             category: 'general'
         },
         'Физическо възпитание и спорт': {
-            description: '58',
+            description: '72',
             category: 'general'
-        },
-        'Чужд език по професията': {
-            description: '58',
-            category: 'general-professional'
-        },
+        }
+    },
+    12: {
         'Алгоритми и структури от данни за машинно обучение': {
             description: 'Теория: 58, Практика: 58',
             category: 'specific-professional'
@@ -316,58 +272,70 @@ const curriculum = {
             description: 'Теория: 29, Практика: 29',
             category: 'specific-professional'
         },
+        'Чужд език по професията': {
+            description: '58',
+            category: 'general-professional'
+        },
         'Производствена практика': {
             description: '64',
             category: 'practice'
         },
-        'Разширена професионална подготовка': {
-            description: '29',
-            category: 'advanced-professional'
+        'Български език и литература': {
+            description: '87',
+            category: 'general'
         },
-        'Разширена подготовка': {
+        'Немски език': {
+            description: '58',
+            category: 'general'
+        },
+        'Математика': {
+            description: '58',
+            category: 'general'
+        },
+        'Гражданско образование': {
             description: '29',
-            category: 'advanced'
+            category: 'general'
+        },
+        'Физическо възпитание и спорт': {
+            description: '58',
+            category: 'general'
         }
     }
 };
 
 // Онлайн икони за различните предмети
 const subjectIcons = {
-    // AI / Intelligent Systems
-    'Алгоритми и структури от данни за машинно обучение': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/diagram-3.svg',
-    'Анализ на данни': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/bar-chart-line.svg',
-    'Програмиране на интелигентни системи': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/cpu.svg',
-    'Изкуствен интелект във вградени системи': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/cpu-fill.svg',
-    'Основи на математиката за интелигентни системи': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/calculator-fill.svg',
-    'Генеративен изкуствен интелект': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/robot.svg',
-    'Дигитални технологии (теория)': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/pc-display.svg',
-    'Дигитални технологии (практика)': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/display.svg',
-    'Програмиране (теория)': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/code-slash.svg',
-    'Програмиране (практика)': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/braces.svg',
-    'Основи на бази данни (теория)': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/database.svg',
-    'Основи на бази данни (практика)': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/database-fill.svg',
-    'Производствена практика': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/briefcase-fill.svg',
-    'Разширена професионална подготовка': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/mortarboard-fill.svg',
-    'Разширена подготовка': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/book-half.svg',
-    'Български език и литература': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/book.svg',
-    'Математика': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/calculator.svg',
-    'Английски език': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/translate.svg',
-    'Немски език': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/globe2.svg',
-    'Чужд език по професията': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/chat-dots.svg',
     'Информационни технологии': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/pc-display.svg',
+    'Информационни технологии ': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/pc-display.svg',
+    'Предприемачество': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/briefcase.svg',
+    'Български език и литература': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/book.svg',
+    'Английски език': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/translate.svg',
+    'Немски език': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/translate.svg',
+    'Математика': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/calculator.svg',
     'История и цивилизации': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/clock-history.svg',
     'География и икономика': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/globe-europe-africa.svg',
     'Философия': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/lightbulb.svg',
-    'Гражданско образование': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/people.svg',
     'Биология и здравно образование': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/tree.svg',
     'Физика и астрономия': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/stars.svg',
     'Химия и опазване на околната среда': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/droplet.svg',
     'Музика': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/music-note.svg',
     'Изобразително изкуство': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/palette.svg',
     'Физическо възпитание и спорт': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/trophy.svg',
-    'Предприемачество': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/briefcase.svg',
+    'Дигитални технологии': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/cpu.svg',
+    'Програмиране': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/braces.svg',
+    'Програмиране ': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/braces.svg',
+    'Основи на бази данни': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/database.svg',
+    'Здравословни и безопасни условия на труд': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/shield-check.svg',
     'Икономика': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/bar-chart.svg',
-    'Здравословни и безопасни условия на труд': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/shield-check.svg'
+    'Производствена практика': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/briefcase.svg',
+    'Алгоритми и структури от данни за машинно обучение': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/diagram-3.svg',
+    'Анализ на данни': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/graph-up.svg',
+    'Програмиране на интелигентни системи': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/robot.svg',
+    'Изкуствен интелект във вградени системи': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/cpu-fill.svg',
+    'Основи на математиката за интелигентни системи': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/infinity.svg',
+    'Генеративен изкуствен интелект': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/robot.svg',
+    'Чужд език по професията': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/chat-square-text.svg',
+    'Гражданско образование': 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/people.svg',
 };
 
 let currentGrade = null;
